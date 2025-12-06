@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Royal Yogyakarta Palace Color System */
+    --background: 45 40% 95%; /* Cream White */
+    --foreground: 25 30% 25%; /* Dark Wood Brown */
+
+    --card: 45 40% 98%;
+    --card-foreground: 25 30% 25%;
+
+    --popover: 45 40% 98%;
+    --popover-foreground: 25 30% 25%;
+
+    --primary: 51 100% 50%; /* Royal Gold */
+    --primary-foreground: 25 30% 20%;
+
+    --secondary: 150 50% 30%; /* Deep Emerald Green */
+    --secondary-foreground: 45 40% 98%;
+
+    --muted: 45 30% 90%;
+    --muted-foreground: 25 20% 45%;
+
+    --accent: 51 100% 50%; /* Royal Gold accent */
+    --accent-foreground: 25 30% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 45 20% 85%;
+    --input: 45 30% 90%;
+    --ring: 51 100% 50%;
+
+    --radius: 0.5rem;
+
+    /* Custom Gamelan Theme Colors */
+    --royal-gold: 51 100% 50%;
+    --royal-gold-dark: 51 100% 40%;
+    --emerald: 150 50% 30%;
+    --emerald-dark: 150 50% 20%;
+    --wood-brown: 25 30% 25%;
+    --cream: 45 40% 95%;
+
+    /* Gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(51 100% 50%), hsl(45 95% 60%));
+    --gradient-emerald: linear-gradient(135deg, hsl(150 50% 30%), hsl(150 50% 40%));
+
+    /* Shadows */
+    --shadow-gold: 0 10px 40px -10px hsl(51 100% 50% / 0.4);
+    --shadow-soft: 0 4px 20px -4px hsl(25 30% 25% / 0.15);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 25 30% 15%;
+    --foreground: 45 40% 95%;
+
+    --card: 25 30% 18%;
+    --card-foreground: 45 40% 95%;
+
+    --popover: 25 30% 18%;
+    --popover-foreground: 45 40% 95%;
+
+    --primary: 51 100% 50%;
+    --primary-foreground: 25 30% 15%;
+
+    --secondary: 150 50% 25%;
+    --secondary-foreground: 45 40% 95%;
+
+    --muted: 25 25% 25%;
+    --muted-foreground: 45 20% 65%;
+
+    --accent: 51 100% 50%;
+    --accent-foreground: 25 30% 15%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 25 25% 25%;
+    --input: 25 25% 25%;
+    --ring: 51 100% 50%;
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
